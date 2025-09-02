@@ -1,0 +1,3 @@
+metric,value
+"partial_corr(sink,rank|len)",0.09321258591624508
+"partial_corr(sink,margin|len)",-0.19975309654345805

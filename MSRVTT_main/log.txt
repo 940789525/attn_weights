@@ -1,0 +1,88 @@
+[2025-09-02 10:02:21,179 tvr 242 INFO]: local_rank: 0 world_size: 1
+[2025-09-02 10:02:21,181 tvr 249 INFO]: Effective parameters:
+[2025-09-02 10:02:21,182 tvr 251 INFO]:   <<< anno_path: /home/wa24301158/dataset/MSRVTT
+[2025-09-02 10:02:21,182 tvr 251 INFO]:   <<< base_encoder: ViT-B/32
+[2025-09-02 10:02:21,183 tvr 251 INFO]:   <<< batch_size: 16
+[2025-09-02 10:02:21,183 tvr 251 INFO]:   <<< batch_size_val: 16
+[2025-09-02 10:02:21,183 tvr 251 INFO]:   <<< clip_lr: 0.0006
+[2025-09-02 10:02:21,184 tvr 251 INFO]:   <<< datatype: msrvtt
+[2025-09-02 10:02:21,184 tvr 251 INFO]:   <<< device: cuda:0
+[2025-09-02 10:02:21,184 tvr 251 INFO]:   <<< distributed: 0
+[2025-09-02 10:02:21,185 tvr 251 INFO]:   <<< do_eval: 1
+[2025-09-02 10:02:21,185 tvr 251 INFO]:   <<< do_train: 0
+[2025-09-02 10:02:21,185 tvr 251 INFO]:   <<< epochs: 1
+[2025-09-02 10:02:21,186 tvr 251 INFO]:   <<< frame_pos: 1
+[2025-09-02 10:02:21,186 tvr 251 INFO]:   <<< init_model: log/MSRVTT_train_b64_2_0901/best.pth
+[2025-09-02 10:02:21,186 tvr 251 INFO]:   <<< local_rank: 0
+[2025-09-02 10:02:21,187 tvr 251 INFO]:   <<< lora_dim: 8
+[2025-09-02 10:02:21,187 tvr 251 INFO]:   <<< max_frames: 12
+[2025-09-02 10:02:21,187 tvr 251 INFO]:   <<< max_words: 32
+[2025-09-02 10:02:21,188 tvr 251 INFO]:   <<< merge_frame_num: 2-2-3
+[2025-09-02 10:02:21,188 tvr 251 INFO]:   <<< merge_layer: 8-9-10
+[2025-09-02 10:02:21,188 tvr 251 INFO]:   <<< merge_token_proportion: 30-10
+[2025-09-02 10:02:21,188 tvr 251 INFO]:   <<< n_display: 5
+[2025-09-02 10:02:21,189 tvr 251 INFO]:   <<< output_dir: log/MSRVTT_custom_debug_0902
+[2025-09-02 10:02:21,189 tvr 251 INFO]:   <<< pretrained_path: /home/wa24301158/mywork/TempMe-master/tvr/models
+[2025-09-02 10:02:21,189 tvr 251 INFO]:   <<< seed: 42
+[2025-09-02 10:02:21,190 tvr 251 INFO]:   <<< tome_propattn: True
+[2025-09-02 10:02:21,190 tvr 251 INFO]:   <<< tome_r: 2
+[2025-09-02 10:02:21,190 tvr 251 INFO]:   <<< tome_tracesource: False
+[2025-09-02 10:02:21,191 tvr 251 INFO]:   <<< video_framerate: 1
+[2025-09-02 10:02:21,191 tvr 251 INFO]:   <<< video_path: /home/wa24301158/dataset/MSRVTT/all_compressed
+[2025-09-02 10:02:21,192 tvr 251 INFO]:   <<< warmup_proportion: 0.1
+[2025-09-02 10:02:21,192 tvr 251 INFO]:   <<< weight_decay: 0.2
+[2025-09-02 10:02:21,192 tvr 251 INFO]:   <<< workers: 8
+[2025-09-02 10:02:21,192 tvr 251 INFO]:   <<< world_size: 1
+[2025-09-02 10:02:21,193 tvr.models.modeling 45 INFO]: v_LoRA: 8 dim
+[2025-09-02 10:02:21,805 tvr.models.modeling 79 INFO]: Position_embedding: [12, 6, 3]
+[2025-09-02 10:02:22,768 tvr.models.modeling 93 INFO]: tome: 2 r | False tracesource | True propattn
+[2025-09-02 10:02:22,769 tvr.models.modeling 95 INFO]: merge_layer: 8-9-10
+[2025-09-02 10:02:22,769 tvr.models.modeling 96 INFO]: merge_frame_num: 2-2-3
+[2025-09-02 10:02:22,769 tvr.models.modeling 97 INFO]: merge_token_proportion: 30-10
+[2025-09-02 10:02:22,769 tvr.models.modeling 98 INFO]: frame_pos: 1
+[2025-09-02 10:02:23,943 tvr 291 INFO]: ***** Running test *****
+[2025-09-02 10:02:23,943 tvr 292 INFO]:   Num examples = 1000
+[2025-09-02 10:02:23,944 tvr 293 INFO]:   Batch size = 16
+[2025-09-02 10:02:23,944 tvr 294 INFO]:   Num steps = 63
+[2025-09-02 10:02:23,944 tvr 295 INFO]: ***** Running val *****
+[2025-09-02 10:02:23,944 tvr 296 INFO]:   Num examples = 1000
+[2025-09-02 10:02:24,076 tvr 546 INFO]: [start] extract
+[2025-09-02 10:02:49,397 tvr 590 INFO]: [finish] extract
+[2025-09-02 10:02:49,398 tvr 592 INFO]: [start] calculate the similarity
+[2025-09-02 10:02:50,391 tvr 613 INFO]: [finish] calculate the similarity
+[2025-09-02 10:02:50,391 tvr 616 INFO]: [start] compute_metrics
+[2025-09-02 10:02:50,392 tvr 617 INFO]: sim matrix size: 1000, 1000
+[2025-09-02 10:02:55,502 tvr 624 INFO]: Eval base ...
+[2025-09-02 10:02:55,503 tvr 625 INFO]: Text-to-Video: R@1: 45.5 - R@5: 71.3 - R@10: 82.2 - R@50: 93.9 - Median R: 2.0 - Mean R: 14.5
+[2025-09-02 10:02:55,503 tvr 627 INFO]: Video-to-Text: R@1: 45.2 - R@5: 71.8 - R@10: 83.2 - R@50: 95.5 - Median R: 2.0 - Mean R: 10.4
+[2025-09-02 10:02:55,512 tvr 658 INFO]: 沉降分数与检索排名的皮尔逊相关系数为: 0.1404
+[2025-09-02 10:02:55,880 tvr 672 INFO]: 散点图已保存至: log/MSRVTT_custom_debug_0902/sink_score_vs_rank_scatter.png
+[2025-09-02 10:02:55,912 tvr 680 INFO]: 按沉降分数分箱后的性能分析:
+             mean  median  R@1 (%)
+score_bin                         
+Low         4.648     0.0     64.8
+Mid-Low     9.228     0.0     50.4
+Mid-High   14.768     2.0     38.4
+High       25.232     3.0     28.4
+[2025-09-02 10:02:55,912 tvr 685 INFO]: 
+==================== 句子长度 vs. 沉降分数分析 ====================
+[2025-09-02 10:02:55,913 tvr 689 INFO]: 句子长度与沉降分数的皮尔逊相关系数为: -0.6066
+[2025-09-02 10:02:56,178 tvr 701 INFO]: 句子长度与沉降分数的散点图已保存至: log/MSRVTT_custom_debug_0902/length_vs_score_scatter.png
+[2025-09-02 10:02:56,195 tvr 707 INFO]: 按句子长度分箱后的沉降分数分析:
+                mean    median       std
+length_bin                              
+Shortest    0.825003  0.840749  0.072813
+Short       0.775700  0.788103  0.081044
+Long        0.722654  0.732173  0.087784
+Longest     0.655498  0.653140  0.089353
+[2025-09-02 10:02:56,195 tvr 712 INFO]: 
+==================== 句子长度 vs. 检索性能分析 ====================
+[2025-09-02 10:02:56,197 tvr 714 INFO]: 句子长度与检索排名的皮尔逊相关系数为: -0.1187
+[2025-09-02 10:02:56,212 tvr 719 INFO]: 按句子长度分箱后的性能分析:
+                 mean  median    R@1 (%)
+length_bin                              
+Shortest    23.109375     2.5  31.640625
+Short       14.962145     1.0  40.063091
+Long         9.125000     0.0  52.678571
+Longest      3.773399     0.0  63.546798
+[2025-09-02 10:02:56,683 tvr 735 INFO]: 句子长度与检索排名的散点图已保存至: log/MSRVTT_custom_debug_0902/length_vs_rank_scatter.png

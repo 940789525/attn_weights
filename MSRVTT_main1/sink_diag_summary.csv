@@ -1,0 +1,11 @@
+key,value
+N,1000.0
+R@1,0.451
+R@5,0.706
+R@10,0.811
+mean_rank,14.415
+mean_margin,-0.039187896996736526
+pearson_sink_rank,0.14335188633416832
+spearman_sink_rank,0.33982343780007
+pearson_sink_sim_margin,-0.3056557499909527
+spearman_sink_sim_margin,-0.3043241627149702
